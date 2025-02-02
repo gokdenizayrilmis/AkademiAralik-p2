@@ -35,6 +35,30 @@
         Console.Write("Sabit degeri giriniz: ");
         double c = Convert.ToDouble(Console.ReadLine());
 
+        double delta = (Math.Pow(b, 2)) - 4 * a * c;
+
+        if (delta > 0)
+        {
+            double kok1 = (-b + Math.Sqrt(delta)) / 2 * a;
+            double kok2 = (-b - Math.Sqrt(delta)) / 2 * a;
+
+            Console.WriteLine(kok1);
+            Console.WriteLine(kok2);
+
+        }
+
+        else if (delta == 0)
+        {
+
+            double kok = (-b) / 2 * a;
+            Console.WriteLine($"Kokler esittir ve {kok} degerindedir.");
+        }
+
+        else
+        {
+            Console.WriteLine("Reel kok yoktur.");
+
+        }
 
 
 
@@ -46,6 +70,5 @@
 
 
 
-
+        }
     }
-}
