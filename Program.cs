@@ -26,7 +26,14 @@
         //  print reel kök yoktur.
         // }
 
+        Console.Write("X karenin katsayisini giriniz: ");
+        double a = Convert.ToDouble(Console.ReadLine());
 
+        Console.Write("X degerinin katsayisini giriniz: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Sabit degeri giriniz: ");
+        double c = Convert.ToDouble(Console.ReadLine());
 
 
 
